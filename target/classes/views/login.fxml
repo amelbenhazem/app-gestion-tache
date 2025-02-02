@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.LoginController" spacing="10" alignment="CENTER" stylesheets="@styles.css" styleClass="root">
+
+    <VBox spacing="10" alignment="CENTER" styleClass="card">
+        <Label text="Connexion" styleClass="title"/>
+        <Label text="Email" styleClass="label"/>
+        <TextField fx:id="emailField" promptText="Entrez votre email" styleClass="input"/>
+        <Label text="Mot de passe" styleClass="label"/>
+        <PasswordField fx:id="passwordField" promptText="Entrez votre mot de passe" styleClass="input"/>
+        <Button text="Se connecter" fx:id="loginButton" defaultButton="true" styleClass="button-primary"/>
+        
+        <Label text="Vous n'avez pas de compte ?" styleClass="info-label"/>
+        <Button text="S'inscrire" fx:id="signupButton" styleClass="button-secondary" onAction="#handleSignupRedirect"/>
+    </VBox>
+</VBox>
