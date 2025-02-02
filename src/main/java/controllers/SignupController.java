@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class SignupController {
 
+
     @FXML
     private void handleLoginRedirect(ActionEvent event) {
         try {
