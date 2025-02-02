@@ -10,7 +10,7 @@ public class test {
         DataSource dataSource = DataSource.getDataSource();
 
         // Appelle la méthode pour insérer un membre
-        insertMember(dataSource.getConn(), "Alice", "Développeur");
+        insertMember(dataSource.getConn(), "Amal", "Développeur");
     }
 
     // Méthode pour insérer un membre dans la base de données

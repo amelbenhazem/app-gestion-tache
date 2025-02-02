@@ -18,7 +18,7 @@
         <Label text="Mot de passe" styleClass="label"/>
         <PasswordField fx:id="passwordField" promptText="Entrez votre mot de passe" styleClass="input"/>
         <Button text="Se connecter" fx:id="loginButton" defaultButton="true" styleClass="button-primary"/>
-        
+
         <Label text="Vous n'avez pas de compte ?" styleClass="info-label"/>
         <Button text="S'inscrire" fx:id="signupButton" styleClass="button-secondary" onAction="#handleSignupRedirect"/>
     </VBox>

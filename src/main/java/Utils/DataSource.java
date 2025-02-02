@@ -3,7 +3,7 @@ import java.sql.*;
 public class DataSource {
     private Connection con;
 
-    private String url="jdbc:mysql://localhost:3306/projetEsprit";
+    private String url="jdbc:mysql://localhost:3306/app-gestion-tache";
     private String user="root";
     private String pass="";
 

@@ -8,7 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER" stylesheets="@styles.css" styleClass="root">
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"    fx:controller="controllers.SignupController" spacing="10" alignment="CENTER" stylesheets="@styles.css" styleClass="root">
+
+
     <VBox spacing="10" alignment="CENTER" styleClass="card">
         <Label text="Inscription" styleClass="title"/>
 
@@ -24,6 +26,6 @@
         <Button text="S'inscrire" fx:id="signupButton" defaultButton="true" styleClass="button-primary"/>
 
         <Label text="Vous avez déjà un compte ?" styleClass="info-label"/>
-        <Button text="Se connecter" fx:id="loginButton" styleClass="button-secondary"/>
+        <Button text="Se connecter" fx:id="loginButton" styleClass="button-secondary" onAction="#handleLoginRedirect"/>
     </VBox>
 </VBox>
